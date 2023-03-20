@@ -7,10 +7,14 @@ const getEstados = async(event) => {
     const estadoClicado = event.target.id.replace('BR-','')
     const estado = await getDadosEstado(estadoClicado)
 
-    document.getElementById('uf').value = estado.uf
+    console.log(estado);
+
+    document.getElementById('uf').textContent = estado.capital
     document.getElementById('estado').value = estado.estado
     document.getElementById('capital').value = estado.capital
     document.getElementById('regiao').value = estado.regiao
+
+
 }
 
 
