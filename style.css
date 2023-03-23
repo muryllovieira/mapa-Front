@@ -92,13 +92,20 @@ path:hover {
     font-size: 14px;
 }
 .cidades{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; */
     gap: 10px;
     padding-top: 15%;
+}
+.cidades ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.cidades li{
+    font-size: 0.9rem;
 }
 
 @media (max-width:960px) {
